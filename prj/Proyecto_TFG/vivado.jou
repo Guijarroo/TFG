@@ -12,3 +12,56 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl
+close_sim
+launch_simulation
+source Serial_Communications_tb.tcl

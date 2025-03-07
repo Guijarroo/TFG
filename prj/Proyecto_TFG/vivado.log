@@ -64,3 +64,1042 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Universidad/Vivado/2022.2/data/ip'.
 open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:17 . Memory (MB): peak = 1125.004 ; gain = 333.230
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1165.633 ; gain = 28.797
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+ERROR: [VRFC 10-4982] syntax error near 'process' [C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd:108]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd:8]
+INFO: [VRFC 10-8704] VHDL file 'C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1196.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1196.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1254.676 ; gain = 7.320
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications'
+ERROR: [VRFC 10-1478] type of aggregate cannot be determined without context ; 0 visible types match here [C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd:169]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd:53]
+INFO: [VRFC 10-8704] VHDL file 'C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd' is ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1255.188 ; gain = 0.512
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1258.043 ; gain = 1.828
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1259.465 ; gain = 0.949
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.270 ; gain = 0.684
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.762 ; gain = 0.391
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1262.613 ; gain = 1.160
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1265.020 ; gain = 1.539
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1266.418 ; gain = 1.398
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1267.320 ; gain = 0.305
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1267.961 ; gain = 0.551
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1269.383 ; gain = 1.422
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Universidad/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Serial_Communications [serial_communications_default]
+Compiling architecture behavioral of entity xil_defaultlib.serial_communications_tb
+Built simulation snapshot Serial_Communications_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG/Proyecto_TFG.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Serial_Communications_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1270.055 ; gain = 0.672
