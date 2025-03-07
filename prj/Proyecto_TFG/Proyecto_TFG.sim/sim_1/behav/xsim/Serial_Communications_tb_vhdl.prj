@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../src/Serial_Comunications.vhd" \
+"../../../../../../tb/Serial_Comunications_tb.vhd" \
+
+# Do not sort compile order
+nosort
