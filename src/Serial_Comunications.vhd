@@ -160,14 +160,14 @@ begin
                             bit_counter_next <= bit_counter_reg + 1;
                         else                    -- Una vez enviada la instrucción bit a bit se pasa la address al registro y saltamos de estado
                             shift_next <= address;  
-                            mosi_next <= address(7); -------------CAMBIADO REVISAR--------------- 
+                            mosi_next <= address(7);  
                             bit_counter_next <= 0;
                             state_next <= SEND_ADDR;
                         end if;
 
                     when SEND_ADDR =>           -- Estado de envío de la dirección desde la FPGA al periférico del acelerómetro bit a bit
-                        if bit_counter_reg < 7 then     -------------CAMBIADO REVISAR--------------- Antes if bit_counter_reg < 8 then
-                            mosi_next <= shift_reg(6);  -------------CAMBIADO REVISAR--------------- Antes mosi_next <= shift_reg(7);
+                        if bit_counter_reg < 7 then
+                            mosi_next <= shift_reg(6);  
                             shift_next <= shift_reg(6 downto 0) & '0';
                             bit_counter_next <= bit_counter_reg + 1;
                         else                    -- Tras escribir la instrucción y la dirección en MOSI saltamos a estados distintos dependiendo de la instrucción
@@ -177,7 +177,7 @@ begin
                                 mosi_next <= '0';
                             else                                -- Escritura
                                 shift_next <= data_down; 
-                                mosi_next <= data_down(7); -------------CAMBIADO REVISAR--------------- 
+                                mosi_next <= data_down(7); 
                                 bit_counter_next <= 0;
                                 state_next <= SEND_DATA;
                             end if;
@@ -192,8 +192,8 @@ begin
                         end if;
                     
                     when SEND_DATA =>           -- Estado en el que se leen los datos en MOSI
-                        if bit_counter_reg < 7 then         -------------CAMBIADO REVISAR--------------- Antes if bit_counter_reg < 8 then
-                             mosi_next <= shift_reg(6);  -------------CAMBIADO REVISAR--------------- Antes mosi_next <= shift_reg(7);
+                        if bit_counter_reg < 7 then        
+                             mosi_next <= shift_reg(6);  
                              shift_next <= shift_reg(6 downto 0) & '0';
                              bit_counter_next <= bit_counter_reg  + 1;
                          else
