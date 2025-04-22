@@ -136,6 +136,22 @@ begin
     )
     begin
         ---
+        -- Registros por defecto
+        state_next       <= state_reg;
+        
+        -- Internos
+        cr_next          <= cr_reg;
+        br_next          <= br_reg;
+        dr_next          <= dr_reg;
+        fr_next          <= fr_reg;
+        
+        -- CPU
+        address_next     <= address_reg;
+        instruction_next <= instruction_reg;
+        data_down_next   <= data_down_reg;
+        data_up_next     <= data_up_reg;
+
+        ---
         -- Salidas por defecto
         
         -- CPU
@@ -195,14 +211,14 @@ begin
                 else
                     sclk <= '1';
                 end if;
-                if cr_reg < FULL_SCLK then
-                    cr_next <= cr_reg + 1 ; 
+                if cr_reg + 1 < FULL_SCLK then
+                    cr_next <= cr_reg + 1; 
                     state_next <= SEND_INSTRUCTION;
                 else
                     cr_next <= 0;
                     instruction_next <= instruction_reg(6 downto 0) & '0';
-                    if br_reg < WORD then
-                        br_next <= br_reg + 1 ;
+                    if br_reg + 1 < WORD then
+                        br_next <= br_reg + 1;
                         state_next <= SEND_INSTRUCTION;
                     else
                         br_next <= 0;
@@ -220,13 +236,13 @@ begin
                  else                                                                               
                      sclk <= '1';                                                              
                  end if;                                                                            
-                 if cr_reg < FULL_SCLK then                                                         
-                     cr_next <= cr_reg + 1 ;                                                        
+                 if cr_reg + 1 < FULL_SCLK then                                                         
+                     cr_next <= cr_reg + 1;                                                        
                      state_next <= SEND_ADDRESS;                                                
                  else                                                                               
                      cr_next <= 0;                                                                  
                      address_next <= address_reg(6 downto 0) & '0'; 
-                     if br_reg < word then                                                          
+                     if br_reg + 1 < word then                                                          
                          br_next <= br_reg + 1 ;                                                    
                          state_next <= SEND_ADDRESS;                                            
                      else                                                                           
@@ -245,21 +261,19 @@ begin
                  -- Salidas
                  cs <= '0';
                  
-                 -- Registro de datos
-                 data_up_next(0) <= miso;
-                 
                  if cr_reg < HALF_SCLK then
                      sclk <= '0';
                  else
                      sclk <= '1';
                  end if;
-                 if cr_reg < FULL_SCLK then
+                 
+                 if cr_reg + 1 < FULL_SCLK then
                      cr_next <= cr_reg + 1 ; 
                      state_next <= READ;
                  else
                      cr_next <= 0;
-                     data_up_next <= data_up_next(6 downto 0) & miso;
-                     if br_reg < word then
+                     data_up_next <= data_up_reg(6 downto 0) & miso;
+                     if br_reg + 1 < word then
                          br_next <= br_reg + 1 ;
                          state_next <= READ;
                      else
@@ -278,13 +292,13 @@ begin
                  else
                      sclk <= '1';
                  end if;
-                 if cr_reg < FULL_SCLK then
+                 if cr_reg + 1 < FULL_SCLK then
                      cr_next <= cr_reg + 1 ; 
                      state_next <= WRITE;
                  else
                      cr_next <= 0;
                      data_down_next <= data_down_reg(6 downto 0) & '0';
-                     if br_reg < word then
+                     if br_reg + 1 < word then
                          br_next <= br_reg + 1;
                          state_next <= WRITE;
                      else
@@ -300,7 +314,7 @@ begin
                  state_next <= DONE;
               
              when DONE =>
-                 if dr_reg < WAIT_TIME then
+                 if dr_reg + 1 < WAIT_TIME then
                      dr_next <= dr_reg + 1; 
                      state_next <= DONE;
                  else
