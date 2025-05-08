@@ -52,36 +52,36 @@ architecture Behavioral of Serial_Communications_tb is
 
     -- Señales para el manejo de tiempos
     constant DELTA    : time := 20 ns;
-    constant DELTA_2  : time := 10 ns;
+    constant CLK_PERIOD  : time := 10 ns;
 
 begin
     -- Crear reloj de 100 MHz
-        process
-            begin
-                if(clk_tb = '1') then
-                   clk_tb <= '0';
+    process
+        begin
+            if(clk_tb = '1') then
+               clk_tb <= '0';
+            else
+               clk_tb <= '1';
+            end if;
+            wait for CLK_PERIOD;
+    end process;    
+    
+    process(clk_tb)
+        begin
+            if rising_edge(clk_tb) then
+                if cs_tb = '1' then
+                    counter <= 0;
+                    counter_16 <= 0;
                 else
-                   clk_tb <= '1';
-                end if;
-                wait for DELTA_2;
-        end process;    
-        
-        process(clk_tb)
-            begin
-                if rising_edge(clk_tb) then
-                    if cs_tb = '1' then
+                    if counter = 15 then
                         counter <= 0;
-                        counter_16 <= 0;
+                        counter_16 <= counter_16 + 1;
                     else
-                        if counter = 15 then
-                            counter <= 0;
-                            counter_16 <= counter_16 + 1;
-                        else
-                            counter <= counter + 1;
-                        end if;
+                        counter <= counter + 1;
                     end if;
                 end if;
-        end process;
+            end if;
+    end process;
         
     
     prueba: Serial_Communications
@@ -159,10 +159,10 @@ end process;
         wait until busy_tb = '0';
         wait until enable_up_tb = '1';
         
+        send_vectors('1', '0', "00000000", "00000000", "00000000");
+        
         wait;
-        -- Prueba de lectura en la dirección 10010111 
---        send_vectors('0', "00001011", "10010110", "00000000", '0');
---        wait for 10 us;
+        
     end process;
 
 end Behavioral;

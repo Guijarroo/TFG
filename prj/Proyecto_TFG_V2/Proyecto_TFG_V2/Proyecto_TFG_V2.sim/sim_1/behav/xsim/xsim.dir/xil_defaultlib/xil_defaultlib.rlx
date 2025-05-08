@@ -2,5 +2,10 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd,1744363863,vhdl,,,,serial_communications,,,,,,,,
-C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd,1744363371,vhdl,,,,serial_communications_tb,,,,,,,,
+C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd,1746611878,vhdl,,,,full_system,,,,,,,,
+C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd,1746702054,vhdl,,,,serial_communications,,,,,,,,
+C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Sync_Debouncer.vhd,1746611759,vhdl,,,,sync_debouncer,,,,,,,,
+C:/Proyecto_TFG/TFG/src/Address.vhd,1746697802,vhdl,,,,address,,,,,,,,
+C:/Proyecto_TFG/TFG/src/Instruction.vhd,1745342393,vhdl,,,,instruction,,,,,,,,
+C:/Proyecto_TFG/TFG/tb/Full_system_tb.vhd,1746710413,vhdl,,,,full_system_tb,,,,,,,,
+C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd,1746702068,vhdl,,,,serial_communications_tb,,,,,,,,

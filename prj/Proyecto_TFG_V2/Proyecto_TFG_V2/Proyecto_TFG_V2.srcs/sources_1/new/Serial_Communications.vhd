@@ -93,9 +93,9 @@ architecture Behavioral of Serial_Communications is
     signal data_down_reg, data_down_next     : STD_LOGIC_VECTOR(7 downto 0);
         
     -- Registros de SPI
-    signal cs_reg, cs_next     : STD_LOGIC;
-    signal mosi_reg, mosi_next : STD_LOGIC;
-    signal sclk_reg, sclk_next : STD_LOGIC;
+--    signal cs_reg, cs_next     : STD_LOGIC;
+--    signal mosi_reg, mosi_next : STD_LOGIC;
+--    signal sclk_reg, sclk_next : STD_LOGIC;
     
     -- Registro de estado
     signal state_reg, state_next : state_type;
@@ -106,7 +106,7 @@ begin
     -- SR + DR
     reg: process(clk, rst)
         begin
-            if rst = '1' then
+            if rst = '0' then
                 state_reg               <= IDLE;           
             elsif rising_edge(clk) then
                 state_reg               <= state_next;
@@ -246,7 +246,7 @@ begin
                          br_next <= br_reg + 1 ;                                                    
                          state_next <= SEND_ADDRESS;                                            
                      else                                                                           
-                         br_next <= 0;                                                              
+                         br_next <= 0;                                                          
                          if fr_reg = READ then 
                             state_next <= READ;
                          elsif fr_reg = WRITE then
