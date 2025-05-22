@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed May 21 18:18:23 2025
-# Process ID: 19528
+# Start of session at: Mon May 12 13:08:26 2025
+# Process ID: 27732
 # Current directory: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32996 C:\Proyecto_TFG\TFG\prj\Proyecto_TFG_V2\Proyecto_TFG_V2\Proyecto_TFG_V2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34480 C:\Proyecto_TFG\TFG\prj\Proyecto_TFG_V2\Proyecto_TFG_V2\Proyecto_TFG_V2.xpr
 # Log file: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/vivado.log
 # Journal file: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2\vivado.jou
 # Running On: DESKTOP-VKHET3S, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17086 MB
@@ -63,33 +63,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Universidad/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1145.590 ; gain = 359.254
+open_project: Time (s): cpu = 00:00:53 ; elapsed = 00:00:20 . Memory (MB): peak = 1162.680 ; gain = 365.848
 update_compile_order -fileset sources_1
-close [ open C:/Proyecto_TFG/TFG/src/SPI_pr.vhd w ]
-add_files C:/Proyecto_TFG/TFG/src/SPI_pr.vhd
-update_compile_order -fileset sources_1
-close [ open C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd w ]
-add_files C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Proyecto_TFG/TFG/tb/SPI_Full_System.vhd w ]
-add_files -fileset sim_1 C:/Proyecto_TFG/TFG/tb/SPI_Full_System.vhd
-update_compile_order -fileset sim_1
-export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/tb/SPI_Full_System.vhd] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 C:/Proyecto_TFG/TFG/tb/SPI_Full_System.vhd
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Proyecto_TFG/TFG/tb/SPI_Full_System.tb w ]
-add_files -fileset sim_1 C:/Proyecto_TFG/TFG/tb/SPI_Full_System.tb
-set_property file_type VHDL [get_files  C:/Proyecto_TFG/TFG/tb/SPI_Full_System.tb]
-update_compile_order -fileset sim_1
-export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd] -no_script -reset -force -quiet
-remove_files  C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Proyecto_TFG/TFG/tb/SPI_Full_System_tb.vhd w ]
-add_files -fileset sim_1 C:/Proyecto_TFG/TFG/tb/SPI_Full_System_tb.vhd
-update_compile_order -fileset sim_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd
-update_compile_order -fileset sim_1
-add_files -norecurse C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd
-update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 13 23:22:55 2025...
