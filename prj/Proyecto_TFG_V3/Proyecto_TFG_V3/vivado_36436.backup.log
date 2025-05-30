@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu May 29 19:55:33 2025
-# Process ID: 18328
+# Start of session at: Tue May 20 10:23:13 2025
+# Process ID: 36436
 # Current directory: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33112 C:\Proyecto_TFG\TFG\prj\Proyecto_TFG_V2\Proyecto_TFG_V2\Proyecto_TFG_V2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1120 C:\Proyecto_TFG\TFG\prj\Proyecto_TFG_V2\Proyecto_TFG_V2\Proyecto_TFG_V2.xpr
 # Log file: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/vivado.log
 # Journal file: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2\vivado.jou
 # Running On: DESKTOP-VKHET3S, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17086 MB
@@ -63,7 +63,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Universidad/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.113 ; gain = 364.852
+open_project: Time (s): cpu = 00:01:09 ; elapsed = 00:00:31 . Memory (MB): peak = 1165.273 ; gain = 376.387
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri May 30 12:12:45 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed May 21 18:17:51 2025...

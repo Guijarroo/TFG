@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Full_system_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Full_system_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="222.001 ns"></ZoomEndTime>
+      <Cursor1Time time="40.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="259"></NameColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/Full_system_tb/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/rst_tb" type="logic">
+      <obj_property name="ElementShortName">rst_tb</obj_property>
+      <obj_property name="ObjectShortName">rst_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group98" type="group">
+      <obj_property name="label">Address</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Full_system_tb/zero_tb" type="logic">
+         <obj_property name="ElementShortName">zero_tb</obj_property>
+         <obj_property name="ObjectShortName">zero_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/one_tb" type="logic">
+         <obj_property name="ElementShortName">one_tb</obj_property>
+         <obj_property name="ObjectShortName">one_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/two_tb" type="logic">
+         <obj_property name="ElementShortName">two_tb</obj_property>
+         <obj_property name="ObjectShortName">two_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/three_tb" type="logic">
+         <obj_property name="ElementShortName">three_tb</obj_property>
+         <obj_property name="ObjectShortName">three_tb</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group200" type="group">
+      <obj_property name="label">Address_after_db</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Full_system_tb/prueba/zero_db" type="logic">
+         <obj_property name="ElementShortName">zero_db</obj_property>
+         <obj_property name="ObjectShortName">zero_db</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/prueba/one_db" type="logic">
+         <obj_property name="ElementShortName">one_db</obj_property>
+         <obj_property name="ObjectShortName">one_db</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/prueba/two_db" type="logic">
+         <obj_property name="ElementShortName">two_db</obj_property>
+         <obj_property name="ObjectShortName">two_db</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/prueba/three_db" type="logic">
+         <obj_property name="ElementShortName">three_db</obj_property>
+         <obj_property name="ObjectShortName">three_db</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/addr/address" type="array">
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/address" type="array">
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/state_next" type="other">
+      <obj_property name="ElementShortName">state_next</obj_property>
+      <obj_property name="ObjectShortName">state_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/state_reg" type="other">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="group100" type="group">
+      <obj_property name="label">Instruction</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Full_system_tb/write_tb" type="logic">
+         <obj_property name="ElementShortName">write_tb</obj_property>
+         <obj_property name="ObjectShortName">write_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/read_tb" type="logic">
+         <obj_property name="ElementShortName">read_tb</obj_property>
+         <obj_property name="ObjectShortName">read_tb</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[7:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/instr/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[7:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/data_down" type="array">
+      <obj_property name="ElementShortName">data_down[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_down[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/data_down_tb" type="array">
+      <obj_property name="ElementShortName">data_down_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_down_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/enable_down_tb" type="logic">
+      <obj_property name="ElementShortName">enable_down_tb</obj_property>
+      <obj_property name="ObjectShortName">enable_down_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/enable_down" type="logic">
+      <obj_property name="ElementShortName">enable_down</obj_property>
+      <obj_property name="ObjectShortName">enable_down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/busy_tb" type="logic">
+      <obj_property name="ElementShortName">busy_tb</obj_property>
+      <obj_property name="ObjectShortName">busy_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/data_up" type="array">
+      <obj_property name="ElementShortName">data_up[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_up[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/data_up_tb" type="array">
+      <obj_property name="ElementShortName">data_up_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_up_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/prueba/coms/enable_up" type="logic">
+      <obj_property name="ElementShortName">enable_up</obj_property>
+      <obj_property name="ObjectShortName">enable_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/enable_up_tb" type="logic">
+      <obj_property name="ElementShortName">enable_up_tb</obj_property>
+      <obj_property name="ObjectShortName">enable_up_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="group111" type="group">
+      <obj_property name="label">SPI_slave_tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Full_system_tb/sclk_tb" type="logic">
+         <obj_property name="ElementShortName">sclk_tb</obj_property>
+         <obj_property name="ObjectShortName">sclk_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/miso_tb" type="logic">
+         <obj_property name="ElementShortName">miso_tb</obj_property>
+         <obj_property name="ObjectShortName">miso_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/cs_tb" type="logic">
+         <obj_property name="ElementShortName">cs_tb</obj_property>
+         <obj_property name="ObjectShortName">cs_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/mosi_tb" type="logic">
+         <obj_property name="ElementShortName">mosi_tb</obj_property>
+         <obj_property name="ObjectShortName">mosi_tb</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group899" type="group">
+      <obj_property name="label">SPI_slave</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Full_system_tb/prueba/coms/cs" type="logic">
+         <obj_property name="ElementShortName">cs</obj_property>
+         <obj_property name="ObjectShortName">cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/prueba/coms/mosi" type="logic">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/counter" type="other">
+         <obj_property name="ElementShortName">counter</obj_property>
+         <obj_property name="ObjectShortName">counter</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Full_system_tb/counter_16" type="other">
+         <obj_property name="ElementShortName">counter_16</obj_property>
+         <obj_property name="ObjectShortName">counter_16</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Full_system_tb/DEBOUNCE_TIME" type="other">
+      <obj_property name="ElementShortName">DEBOUNCE_TIME</obj_property>
+      <obj_property name="ObjectShortName">DEBOUNCE_TIME</obj_property>
+   </wvobject>
+</wave_config>
