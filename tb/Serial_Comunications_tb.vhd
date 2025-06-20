@@ -145,21 +145,22 @@ end process;
         end procedure send_vectors;
     begin
         -- Reset inicial
-        send_vectors('1', '0', "00000000", "00000000", "00000000");
-        wait for 10 ns;  -- Espera para ver el reset en la simulación
+        wait for 1 ns;
+        send_vectors('0', '0', "00000000", "00000000", "00000000");
+        wait for 10 ps;  -- Espera para ver el reset en la simulación
         
         -- Prueba de escritura en la dirección 10010110 
-        send_vectors('0', '1', "00001010", "10010110", "01011010");
+        send_vectors('1', '1', "00001010", "10010110", "01011010");
         wait until busy_tb = '1';
         wait until busy_tb = '0';
         
         -- Prueba de lectura en la dirección 10010111 
-        send_vectors('0', '1', "00001011", "10010111", "00000000");
+        send_vectors('1', '1', "00001011", "10010111", "00000000");
         wait until busy_tb = '1';
         wait until busy_tb = '0';
         wait until enable_up_tb = '1';
         
-        send_vectors('1', '0', "00000000", "00000000", "00000000");
+        send_vectors('0', '0', "00000000", "00000000", "00000000");
         
         wait;
         

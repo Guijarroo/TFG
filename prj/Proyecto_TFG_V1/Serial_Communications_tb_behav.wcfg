@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Serial_Communications_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Serial_Communications_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="922.501 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/Serial_Communications_tb/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/rst_tb" type="logic">
+      <obj_property name="ElementShortName">rst_tb</obj_property>
+      <obj_property name="ObjectShortName">rst_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/address_tb" type="array">
+      <obj_property name="ElementShortName">address_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/instruction_tb" type="array">
+      <obj_property name="ElementShortName">instruction_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/data_down_tb" type="array">
+      <obj_property name="ElementShortName">data_down_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_down_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/enable_down_tb" type="logic">
+      <obj_property name="ElementShortName">enable_down_tb</obj_property>
+      <obj_property name="ObjectShortName">enable_down_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/busy_tb" type="logic">
+      <obj_property name="ElementShortName">busy_tb</obj_property>
+      <obj_property name="ObjectShortName">busy_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/data_up_tb" type="array">
+      <obj_property name="ElementShortName">data_up_tb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_up_tb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/enable_up_tb" type="logic">
+      <obj_property name="ElementShortName">enable_up_tb</obj_property>
+      <obj_property name="ObjectShortName">enable_up_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/sclk_tb" type="logic">
+      <obj_property name="ElementShortName">sclk_tb</obj_property>
+      <obj_property name="ObjectShortName">sclk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/miso_tb" type="logic">
+      <obj_property name="ElementShortName">miso_tb</obj_property>
+      <obj_property name="ObjectShortName">miso_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/cs_tb" type="logic">
+      <obj_property name="ElementShortName">cs_tb</obj_property>
+      <obj_property name="ObjectShortName">cs_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/mosi_tb" type="logic">
+      <obj_property name="ElementShortName">mosi_tb</obj_property>
+      <obj_property name="ObjectShortName">mosi_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/counter_16" type="other">
+      <obj_property name="ElementShortName">counter_16</obj_property>
+      <obj_property name="ObjectShortName">counter_16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/DELTA" type="other">
+      <obj_property name="ElementShortName">DELTA</obj_property>
+      <obj_property name="ObjectShortName">DELTA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/prueba/state_reg" type="other">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Serial_Communications_tb/prueba/state_next" type="other">
+      <obj_property name="ElementShortName">state_next</obj_property>
+      <obj_property name="ObjectShortName">state_next</obj_property>
+   </wvobject>
+</wave_config>
