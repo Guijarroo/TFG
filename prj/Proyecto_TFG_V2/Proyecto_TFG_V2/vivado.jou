@@ -13,3 +13,43 @@
 start_gui
 open_project C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Full_system [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+add_files -norecurse {C:/Proyecto_TFG/TFG/src/address.vhd C:/Proyecto_TFG/TFG/src/serial_communications.vhd C:/Proyecto_TFG/TFG/src/instruction.vhd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/Address.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/Instruction.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/serial_communications.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Proyecto_TFG/TFG/src/Address.vhd C:/Proyecto_TFG/TFG/src/Instruction.vhd C:/Proyecto_TFG/TFG/src/serial_communications.vhd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd] -no_script -reset -force -quiet
+remove_files  C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd
+add_files -norecurse {C:/Proyecto_TFG/TFG/src/address.vhd C:/Proyecto_TFG/TFG/src/serial_communications.vhd C:/Proyecto_TFG/TFG/src/instruction.vhd}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/Full_system.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/Full_system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_simulation
+open_wave_config C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Full_system_tb_behav.wcfg
+source Serial_Communications_tb.tcl

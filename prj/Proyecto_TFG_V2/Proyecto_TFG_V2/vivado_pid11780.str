@@ -363,3 +363,643 @@ typeControlKey((HResource) null, "Serial_Communications.vhd", 'c'); // ac
 // HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 11:47:22 AM CEST
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 36 ms. Decreasing delay to 2036 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 12:17:25 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 66431 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Sync_Debouncer.vhd", 384, 1086); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 379, 978); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 379, 978, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("Sync_Debouncer.vhd", 390, 1186); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 390, 1186, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("Sync_Debouncer.vhd", 397, 368); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 368, 362); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 392, 364); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 81 MB. Current time: 6/20/25, 12:47:28 PM CEST
+// Elapsed time: 1517 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/utils_1/imports/synth_1/Full_system.dcp with file C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/Full_system.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 10 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Fri Jun 20 13:06:40 2025] Launched synth_1... Run output will be captured here: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/runme.log [Fri Jun 20 13:06:40 2025] Launched impl_1... Run output will be captured here: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 145 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // S.a
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 12, false); // u.d
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;address;-;;-;10;-;"); // u.d
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ao
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top Full_system [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), coms : Serial_Communications(Behavioral) (Serial_Communications.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), instr : Instruction(Behavioral) (Instruction.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), instr : Instruction(Behavioral) (Instruction.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), coms : Serial_Communications(Behavioral) (Serial_Communications.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), coms : Serial_Communications(Behavioral) (Serial_Communications.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/utils_1/imports/synth_1/Full_system.dcp with file C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/Serial_Communications.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Fri Jun 20 13:12:27 2025] Launched synth_1... Run output will be captured here: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/runme.log [Fri Jun 20 13:12:27 2025] Launched impl_1... Run output will be captured here: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [filemgmt 20-727] File analysis is incomplete due to previous errors / warnings. Incomplete data will be used for elaboration. [C:/Proyecto_TFG/TFG/src/SPI_Full_System.vhd:1]. ]", 2, false); // u.d
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Proyecto_TFG\TFG\src\SPI_Full_System.vhd;-;;-;16;-;line;-;1;-;;-;16;-;"); // u.d
+selectButton(PAResourceOtoP.OpenFileAction_OPEN_DIRECTORY, "Open Directory"); // a
+dismissDialog("Unable to Open File"); // Q.a
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2); // D
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 3, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // R
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 4, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// TclEventType: RUN_STEP_COMPLETED
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2", 1); // aa.b
+String[] filenames31467 = {"C:/Proyecto_TFG/TFG/src/address.vhd", "C:/Proyecto_TFG/TFG/src/instruction.vhd", "C:/Proyecto_TFG/TFG/src/serial_communications.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Proyecto_TFG/TFG/src/address.vhd C:/Proyecto_TFG/TFG/src/serial_communications.vhd C:/Proyecto_TFG/TFG/src/instruction.vhd} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), instr : Instruction(Behavioral) (Instruction.vhd)]", 5, false); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address.vhd", 1); // o
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 4, false, false, false, false, true, false); // D - Popup Trigger
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 4, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+dismissDialog("Add Sources"); // c
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, Unreferenced]", 17); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 8); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced]", 8); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Instruction.vhd]", 4, false, false, true, false, false, false); // D - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, serial_communications.vhd]", 6, false, false, true, false, false, false); // D - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, serial_communications.vhd]", 6, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // U
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/Address.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/Instruction.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/src/serial_communications.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {C:/Proyecto_TFG/TFG/src/Address.vhd C:/Proyecto_TFG/TFG/src/Instruction.vhd C:/Proyecto_TFG/TFG/src/serial_communications.vhd} 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), coms : Serial_Communications(Behavioral) (Serial_Communications.vhd)]", 6, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // U
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+String[] filenames16706 = {"C:/Proyecto_TFG/TFG/src/address.vhd", "C:/Proyecto_TFG/TFG/src/instruction.vhd", "C:/Proyecto_TFG/TFG/src/serial_communications.vhd"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 14 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Proyecto_TFG/TFG/src/address.vhd C:/Proyecto_TFG/TFG/src/serial_communications.vhd C:/Proyecto_TFG/TFG/src/instruction.vhd} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), instr : Instruction(Behavioral) (instruction.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), instr : Instruction(Behavioral) (instruction.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("instruction.vhd", 252, 604); // ac
+selectCodeEditor("instruction.vhd", 69, 429); // ac
+selectCodeEditor("instruction.vhd", 41, 555); // ac
+selectCodeEditor("instruction.vhd", 527, 843); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (address.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (address.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (address.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("address.vhd", 251, 521); // ac
+selectCodeEditor("address.vhd", 39, 472); // ac
+selectCodeEditor("address.vhd", 72, 329); // ac
+selectCodeEditor("address.vhd", 353, 147); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2); // D
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/utils_1/imports/synth_1/Full_system.dcp with file C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/Full_system.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Fri Jun 20 13:17:08 2025] Launched synth_1... Run output will be captured here: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/runme.log [Fri Jun 20 13:17:08 2025] Launched impl_1... Run output will be captured here: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 97 MB. Current time: 6/20/25, 1:17:29 PM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 146 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+// Elapsed time: 80 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 05 2022-01:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5756 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AA7721A 
+// [Engine Memory]: 2,668 MB (+1691834kb) [48:24:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,678 MB. GUI used memory: 100 MB. Current time: 6/20/25, 1:21:08 PM CEST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3366.535 ; gain = 2167.645 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/Full_system.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/impl_1/Full_system.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 2,694 MB. GUI used memory: 101 MB. Current time: 6/20/25, 1:21:44 PM CEST
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 167 MB (+1893kb) [48:32:42]
+// Elapsed time: 472 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 427, 283); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync_Debouncer.vhd", 3); // o
+selectCodeEditor("Sync_Debouncer.vhd", 197, 351); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 197, 351, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("Sync_Debouncer.vhd", 365, 389); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 365, 389, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("Sync_Debouncer.vhd", 87, 387); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 87, 387, false, false, false, false, true); // ac - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 99 MB. Current time: 6/20/25, 1:51:45 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 2:21:46 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 2:51:49 PM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1185710 ms. Increasing delay to 3557130 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1186739 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1190753 ms.
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: updateGUI() is taking  1741 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1960 ms.
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1622 ms.
+// TclEventType: DEBUG_PROBE_DELETE
+// WARNING: HEventQueue.dispatchEvent() is taking  1452 ms.
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AA7721A 
+// WARNING: HEventQueue.dispatchEvent() is taking  2438 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 98 MB. Current time: 6/20/25, 3:34:57 PM CEST
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 4:04:50 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 24 ms. Decreasing delay to 2024 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 4:34:53 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 5:04:55 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1426 ms. Increasing delay to 4278 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 5:34:58 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 96 MB. Current time: 6/20/25, 6:05:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 6:35:04 PM CEST
+// Elapsed time: 19972 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // j.a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instruction.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync_Debouncer.vhd", 3); // o
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 7:05:06 PM CEST
+// Elapsed time: 1315 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 2, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Full_system_tb(Behavioral) (Full_system_tb.vhd)]", 17, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Full_system_tb(Behavioral) (Full_system_tb.vhd)]", 17, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 18 seconds
+selectCodeEditor("Full_system_tb.vhd", 184, 1323); // ac
+typeControlKey((HResource) null, "Full_system_tb.vhd", 'c'); // ac
+// Elapsed time: 430 seconds
+selectCodeEditor("Full_system_tb.vhd", 217, 750); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 98 MB. Current time: 6/20/25, 7:35:09 PM CEST
+// Elapsed time: 296 seconds
+selectCodeEditor("Full_system_tb.vhd", 562, 1196); // ac
+selectCodeEditor("Full_system_tb.vhd", 582, 1204); // ac
+selectCodeEditor("Full_system_tb.vhd", 583, 1205, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("Full_system_tb.vhd", 584, 1215); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Full_system_tb.vhd", 6); // o
+typeControlKey((HResource) null, "Full_system_tb.vhd", 'c'); // ac
+// Elapsed time: 87 seconds
+selectCodeEditor("Full_system_tb.vhd", 530, 1019); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 97 MB. Current time: 6/20/25, 8:05:12 PM CEST
+// Elapsed time: 2338 seconds
+selectCodeEditor("Full_system_tb.vhd", 35, 392); // ac
+typeControlKey((HResource) null, "Full_system_tb.vhd", 'c'); // ac
+// Elapsed time: 250 seconds
+selectCodeEditor("Full_system_tb.vhd", 513, 933); // ac
+selectCodeEditor("Full_system_tb.vhd", 493, 937); // ac
+typeControlKey((HResource) null, "Full_system_tb.vhd", 'c'); // ac
+// Elapsed time: 323 seconds
+selectCodeEditor("Full_system_tb.vhd", 369, 988); // ac
+// Elapsed time: 152 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'Serial_Communications_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Universidad/Vivado/2022.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'Serial_Communications_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj Serial_Communications_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/src/serial_communications.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'serial_communications' INFO: [VRFC 10-163] Analyzing VHDL file "C:/Proyecto_TFG/TFG/tb/Serial_Comunications_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'Serial_Communications_tb' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Serial_Communications_tb_behav xil_defaultlib.Serial_Communications_tb -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "Serial_Communications_tb_behav -key {Behavioral:sim_1:Functional:Serial_Communications_tb} -tclbatch {Serial_Communications_tb.tcl} -view {C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Full_system_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Full_system_tb_behav.wcfg 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source Serial_Communications_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 100us 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'Serial_Communications_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 100us 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3431.930 ; gain = 10.051 
+// 'd' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 177 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Full_system_tb_behav.wcfg"); // u
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 104 MB. Current time: 6/20/25, 8:35:14 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 104 MB. Current time: 6/20/25, 9:05:17 PM CEST
+// Elapsed time: 2097 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9, true, false, false, false, true, false); // f - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_SETTINGS, "Simulation Settings..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1852 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // g
+// Elapsed time: 1233 seconds
+dismissDialog("Settings"); // d
+selectCodeEditor("Full_system_tb.vhd", 34, 452); // ac
+typeControlKey((HResource) null, "Full_system_tb.vhd", 'c'); // ac
+// Elapsed time: 245 seconds
+selectCodeEditor("Full_system_tb.vhd", 169, 862); // ac
+typeControlKey((HResource) null, "Full_system_tb.vhd", 'c'); // ac
+// [GUI Memory]: 178 MB (+3645kb) [56:37:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 90 MB. Current time: 6/20/25, 9:35:19 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 99 MB. Current time: 6/20/25, 10:05:22 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 98 MB. Current time: 6/20/25, 10:35:25 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 98 MB. Current time: 6/20/25, 11:05:28 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 88 MB. Current time: 6/20/25, 11:35:31 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 88 MB. Current time: 6/21/25, 12:05:33 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 87 MB. Current time: 6/21/25, 12:35:37 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 87 MB. Current time: 6/21/25, 1:05:39 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 88 MB. Current time: 6/21/25, 1:35:42 AM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AA7721A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  10887908 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 90 MB. Current time: 6/21/25, 4:40:33 AM CEST
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 15751914ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15752273 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 89 MB. Current time: 6/21/25, 9:03:19 AM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1024 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1532 ms.
+// Elapsed time: 41416 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // j.a
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 87 MB. Current time: 6/21/25, 9:33:22 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 87 MB. Current time: 6/21/25, 10:03:24 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 87 MB. Current time: 6/21/25, 10:33:27 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 88 MB. Current time: 6/21/25, 11:03:30 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 88 MB. Current time: 6/21/25, 11:33:33 AM CEST
+// Elapsed time: 10695 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("Sync_Debouncer.vhd", 75, 813); // ac
+typeControlKey((HResource) null, "Sync_Debouncer.vhd", 'c'); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 108, 942); // ac
+typeControlKey((HResource) null, "Sync_Debouncer.vhd", 'v'); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 568, 930); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 568, 909); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 328, 934); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 255, 1119); // ac
+selectCodeEditor("Sync_Debouncer.vhd", 146, 1080); // ac
+typeControlKey((HResource) null, "Sync_Debouncer.vhd", 'c'); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 108 MB. Current time: 6/21/25, 12:03:35 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 109 MB. Current time: 6/21/25, 12:33:38 PM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AA7721A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  677850 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: updateGUI() is taking  1415 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1415 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 108 MB. Current time: 6/21/25, 1:08:39 PM CEST
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1934 ms.
