@@ -133,3 +133,233 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 70 MB (+70484kb) [00:00:17]
+// [Engine Memory]: 926 MB (+819296kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  2259 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Universidad/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 78 MB (+5194kb) [00:00:19]
+// [Engine Memory]: 1,005 MB (+34153kb) [00:00:19]
+// Project name: Proyecto_TFG_V2; location: C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 1140.016 ; gain = 341.938 
+dismissDialog("Open Project"); // bq
+// [GUI Memory]: 101 MB (+19946kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 115 MB (+9414kb) [00:04:49]
+// [GUI Memory]: 123 MB (+2586kb) [00:16:58]
+// Elapsed time: 1041 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), addr : Address(Behavioral) (Address.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 52 seconds
+selectCodeEditor("Address.vhd", 159, 309); // ac
+typeControlKey((HResource) null, "Address.vhd", 'c'); // ac
+// Elapsed time: 358 seconds
+selectCodeEditor("Address.vhd", 339, 104); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 67 MB. Current time: 6/18/25, 1:27:12 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1240 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2839104 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2840470 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 67 MB. Current time: 6/18/25, 2:30:28 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2840660 ms. Increasing delay to 8521980 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3705 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7500 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1568 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1165 ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 134 MB (+5099kb) [01:37:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  1801688 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1803705 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 62 MB. Current time: 6/18/25, 3:24:28 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  5633 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1019 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 58 MB. Current time: 6/18/25, 3:54:30 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 57 MB. Current time: 6/18/25, 4:24:33 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 57 MB. Current time: 6/18/25, 4:54:36 PM CEST
+// Elapsed time: 13943 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // D - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L
+// Elapsed time: 15 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 2, true, false); // o - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 2); // o
+setText("PAResourceAtoD.AbstractFileView_READ_ONLY", "C:/Proyecto_TFG/TFG/const/Nexys-A7-100T-Master.xdc"); // d
+// Elapsed time: 42 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 760, 158); // ac
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'c'); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 1093, 575); // ac
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'c'); // ac
+// Elapsed time: 44 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 1083, 300); // ac
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'c'); // ac
+// Elapsed time: 138 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 440, 317); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 14, 229); // ac
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 1060, 220); // ac
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'c'); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 1019, 350); // ac
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'c'); // ac
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 60 ms. Decreasing delay to 2060 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/18/25, 5:24:38 PM CEST
+// Elapsed time: 1324 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 595 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd), db_enable_down : Sync_Debouncer(Behavioral) (Sync_Debouncer.vhd)]", 2, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 83 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Full_system(Behavioral) (Full_System.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 5:54:41 PM CEST
+// Elapsed time: 220 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync_Debouncer.vhd", 4); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 6:24:44 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/18/25, 6:54:46 PM CEST
+// Elapsed time: 5308 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Full_System.vhd", 3); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/18/25, 7:24:49 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2063 ms. Increasing delay to 6189 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2532 ms. Increasing delay to 5000 ms.
+// Elapsed time: 167 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 2); // o
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 345, 247); // ac
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync_Debouncer.vhd", 4); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Full_System.vhd", 3); // o
+// Elapsed time: 79 seconds
+selectCodeEditor("Full_System.vhd", 129, 165); // ac
+selectCodeEditor("Full_System.vhd", 129, 165, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("Full_System.vhd", 141, 185); // ac
+selectCodeEditor("Full_System.vhd", 141, 185, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "Full_System.vhd", 'c'); // ac
+selectCodeEditor("Full_System.vhd", 135, 166); // ac
+selectCodeEditor("Full_System.vhd", 135, 166, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "Full_System.vhd", 'c'); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 7:54:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 8:24:55 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 8:54:58 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3048631 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 9:51:01 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3050099 ms. Increasing delay to 9150297 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3050966 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3050766 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3050738 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3734 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3734 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3734 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4800 ms. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4012429 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4014316 ms. Increasing delay to 7000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 11:08:46 PM CEST
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 921ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7656 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3821 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17514 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 19590 ms. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9224 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10686 ms. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2767 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/18/25, 11:38:45 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1615 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1038 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2377 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4502 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2591 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1762 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1513 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1073 ms.
+// [GUI Memory]: 157 MB (+16640kb) [11:00:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/19/25, 12:08:48 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 12:38:50 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/19/25, 1:08:53 AM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 43 ms. Decreasing delay to 2043 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/19/25, 1:38:56 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 2:08:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 2:39:01 AM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10879778 ms. Increasing delay to 32639334 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1703 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 6:01:50 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  15460107 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/19/25, 10:19:46 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 10:49:47 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/19/25, 11:19:50 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1588 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1486 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4848 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 52 MB. Current time: 6/19/25, 12:06:15 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1309 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 51 MB. Current time: 6/19/25, 12:36:12 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 51 MB. Current time: 6/19/25, 1:06:15 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 59 MB. Current time: 6/19/25, 1:36:18 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 2:06:21 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 61 MB. Current time: 6/19/25, 5:22:52 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1061827 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 5:52:53 PM CEST
+// Elapsed time: 81702 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPI_Full_system(Behavioral) (SPI_Full_System.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPI_Full_system(Behavioral) (SPI_Full_System.vhd), coms : Serial_Communications(Behavioral) (Serial_Communications.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPI_Full_system(Behavioral) (SPI_Full_System.vhd), coms : Serial_Communications(Behavioral) (Serial_Communications.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Serial_Communications.vhd", 398, 473); // ac
+typeControlKey((HResource) null, "Serial_Communications.vhd", 'c'); // ac
+// Elapsed time: 49 seconds
+selectCodeEditor("Serial_Communications.vhd", 40, 561); // ac
+typeControlKey((HResource) null, "Serial_Communications.vhd", 'c'); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 6:22:55 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 6:52:58 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 7:23:01 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  881302 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 7:53:05 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  630310 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 8:23:10 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/19/25, 8:57:30 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1706 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10882256 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 12:14:22 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 12:44:25 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 1:14:28 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 1:44:31 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  10882829 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2009 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 5:09:36 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  20244917 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 10:47:17 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 11:17:20 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 11:47:22 AM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 36 ms. Decreasing delay to 2036 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 60 MB. Current time: 6/20/25, 12:17:25 PM CEST

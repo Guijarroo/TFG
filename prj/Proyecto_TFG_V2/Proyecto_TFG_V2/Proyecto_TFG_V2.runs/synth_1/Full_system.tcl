@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -85,10 +88,10 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Proyecto_TFG/TFG/src/Address.vhd
-  C:/Proyecto_TFG/TFG/src/Instruction.vhd
-  C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd
   C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Sync_Debouncer.vhd
+  C:/Proyecto_TFG/TFG/src/address.vhd
+  C:/Proyecto_TFG/TFG/src/instruction.vhd
+  C:/Proyecto_TFG/TFG/src/serial_communications.vhd
   C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd
 }
 OPTRACE "Adding files" END { }

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="spi_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sbus" />
+            <top_module name="spi_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="78.333333 us"></ZoomStartTime>
+      <ZoomEndTime time="104.333334 us"></ZoomEndTime>
+      <Cursor1Time time="100.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/spi_tb/uut/Controller/state_reg" type="other">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/state_next" type="other">
+      <obj_property name="ElementShortName">state_next</obj_property>
+      <obj_property name="ObjectShortName">state_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/address" type="array">
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[7:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/enable_down" type="logic">
+      <obj_property name="ElementShortName">enable_down</obj_property>
+      <obj_property name="ObjectShortName">enable_down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/enable_up" type="logic">
+      <obj_property name="ElementShortName">enable_up</obj_property>
+      <obj_property name="ObjectShortName">enable_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/enable_registers" type="logic">
+      <obj_property name="ElementShortName">enable_registers</obj_property>
+      <obj_property name="ObjectShortName">enable_registers</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/controll_rdata" type="array">
+      <obj_property name="ElementShortName">controll_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">controll_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/axis_addr" type="array">
+      <obj_property name="ElementShortName">axis_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Communications/state_reg" type="other">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/miso_tb" type="logic">
+      <obj_property name="ElementShortName">miso_tb</obj_property>
+      <obj_property name="ObjectShortName">miso_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/mosi_tb" type="logic">
+      <obj_property name="ElementShortName">mosi_tb</obj_property>
+      <obj_property name="ObjectShortName">mosi_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Communications/mosi" type="logic">
+      <obj_property name="ElementShortName">mosi</obj_property>
+      <obj_property name="ObjectShortName">mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Communications/state_next" type="other">
+      <obj_property name="ElementShortName">state_next</obj_property>
+      <obj_property name="ObjectShortName">state_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Communications/cr_reg" type="other">
+      <obj_property name="ElementShortName">cr_reg</obj_property>
+      <obj_property name="ObjectShortName">cr_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/axis_addr" type="array">
+      <obj_property name="ElementShortName">axis_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Communications/sclk" type="logic">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Regs/sout_rdata_reg" type="array">
+      <obj_property name="ElementShortName">sout_rdata_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sout_rdata_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Communications/data_up_reg" type="array">
+      <obj_property name="ElementShortName">data_up_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_up_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Controller/controll_rdata_reg" type="array">
+      <obj_property name="ElementShortName">controll_rdata_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">controll_rdata_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/spi_tb/uut/Regs/sin.rstb" type="logic">
+      <obj_property name="ElementShortName">.rstb</obj_property>
+      <obj_property name="ObjectShortName">.rstb</obj_property>
+   </wvobject>
+</wave_config>

@@ -10,7 +10,7 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source Full_system.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 394.652 ; gain = 84.902
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 394.559 ; gain = 69.836
 Command: read_checkpoint -auto_incremental -incremental C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/utils_1/imports/synth_1/Full_system.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/utils_1/imports/synth_1/Full_system.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,38 +23,38 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 932
+INFO: [Synth 8-7075] Helper process launched with PID 30780
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Universidad/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.926 ; gain = 408.832
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1223.141 ; gain = 408.859
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Full_system' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:60]
 INFO: [Synth 8-3491] module 'Sync_Debouncer' declared at 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Sync_Debouncer.vhd:26' bound to instance 'db_enable_down' of component 'Sync_Debouncer' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:170]
 INFO: [Synth 8-638] synthesizing module 'Sync_Debouncer' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Sync_Debouncer.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'Sync_Debouncer' (0#1) [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Sync_Debouncer.vhd:33]
-INFO: [Synth 8-3491] module 'Address' declared at 'C:/Proyecto_TFG/TFG/src/Address.vhd:34' bound to instance 'addr' of component 'Address' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:187]
-INFO: [Synth 8-638] synthesizing module 'Address' [C:/Proyecto_TFG/TFG/src/Address.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'Address' (0#1) [C:/Proyecto_TFG/TFG/src/Address.vhd:43]
-INFO: [Synth 8-3491] module 'Instruction' declared at 'C:/Proyecto_TFG/TFG/src/Instruction.vhd:34' bound to instance 'instr' of component 'Instruction' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:197]
-INFO: [Synth 8-638] synthesizing module 'Instruction' [C:/Proyecto_TFG/TFG/src/Instruction.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Instruction' (0#1) [C:/Proyecto_TFG/TFG/src/Instruction.vhd:42]
-INFO: [Synth 8-3491] module 'Serial_Communications' declared at 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd:34' bound to instance 'coms' of component 'Serial_Communications' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:205]
-INFO: [Synth 8-638] synthesizing module 'Serial_Communications' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Serial_Communications' (0#1) [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Serial_Communications.vhd:61]
+INFO: [Synth 8-3491] module 'address' declared at 'C:/Proyecto_TFG/TFG/src/address.vhd:34' bound to instance 'addr' of component 'Address' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'address' [C:/Proyecto_TFG/TFG/src/address.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'address' (0#1) [C:/Proyecto_TFG/TFG/src/address.vhd:43]
+INFO: [Synth 8-3491] module 'instruction' declared at 'C:/Proyecto_TFG/TFG/src/instruction.vhd:34' bound to instance 'instr' of component 'Instruction' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'instruction' [C:/Proyecto_TFG/TFG/src/instruction.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'instruction' (0#1) [C:/Proyecto_TFG/TFG/src/instruction.vhd:42]
+INFO: [Synth 8-3491] module 'serial_communications' declared at 'C:/Proyecto_TFG/TFG/src/serial_communications.vhd:34' bound to instance 'coms' of component 'Serial_Communications' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'serial_communications' [C:/Proyecto_TFG/TFG/src/serial_communications.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'serial_communications' (0#1) [C:/Proyecto_TFG/TFG/src/serial_communications.vhd:61]
 INFO: [Synth 8-256] done synthesizing module 'Full_system' (0#1) [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.srcs/sources_1/new/Full_System.vhd:60]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.992 ; gain = 500.898
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1315.574 ; gain = 501.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1314.992 ; gain = 500.898
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1315.574 ; gain = 501.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1314.992 ; gain = 500.898
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1315.574 ; gain = 501.293
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1314.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1315.574 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -65,31 +65,31 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Full_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1356.297 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1375.945 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Universidad/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Serial_Communications'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'serial_communications'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -101,9 +101,9 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'S
                    write |                          0100000 |                              100
                     done |                          1000000 |                              110
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'Serial_Communications'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'serial_communications'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -153,25 +153,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -189,37 +189,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,26 +250,26 @@ Report Cell Usage:
 |13    |OBUF   |    13|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1356.297 ; gain = 500.898
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1356.297 ; gain = 542.203
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1375.945 ; gain = 501.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1375.945 ; gain = 561.664
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1356.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1375.945 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1358.598 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: bff73dc7
+Synth Design complete, checksum: 287096a3
 INFO: [Common 17-83] Releasing license: Synthesis
 39 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 1358.598 ; gain = 939.078
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1375.945 ; gain = 956.527
 INFO: [Common 17-1381] The checkpoint 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.runs/synth_1/Full_system.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Full_system_utilization_synth.rpt -pb Full_system_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May  9 14:20:41 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 20 13:17:55 2025...

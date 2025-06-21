@@ -31,16 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Address is
+entity address is
     Port ( zero     : in STD_LOGIC;
            one      : in STD_LOGIC;
            two      : in STD_LOGIC;
            three    : in STD_LOGIC;
            address  : out STD_LOGIC_VECTOR(7 downto 0)
      );
-end Address;
+end address;
 
-architecture Behavioral of Address is
+architecture Behavioral of address is
 
 begin
     process(zero, one, two, three)  

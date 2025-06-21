@@ -31,15 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Instruction is
+entity instruction is
     Port ( read         : in STD_LOGIC;
            write        : in STD_LOGIC;
            instruction  : out STD_LOGIC_VECTOR(7 downto 0)
     );
            
-end Instruction;
+end instruction;
 
-architecture Behavioral of Instruction is
+architecture Behavioral of instruction is
 
 begin
     process(read, write)  

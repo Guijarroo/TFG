@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Jun 18 16:01:27 2025
+| Date         : Fri Jun 20 18:24:15 2025
 | Host         : DESKTOP-VKHET3S running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    25 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    94 |
+| Unused register locations in slices containing registers |   102 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,46 +58,46 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              13 |            6 |
-| No           | No                    | Yes                    |              11 |            6 |
-| No           | Yes                   | No                     |              46 |           12 |
-| Yes          | No                    | No                     |              30 |            9 |
-| Yes          | No                    | Yes                    |             136 |           54 |
-| Yes          | Yes                   | No                     |              38 |           13 |
+| No           | No                    | No                     |              12 |            5 |
+| No           | No                    | Yes                    |              11 |            8 |
+| No           | Yes                   | No                     |              46 |           13 |
+| Yes          | No                    | No                     |              32 |           10 |
+| Yes          | No                    | Yes                    |             136 |           49 |
+| Yes          | Yes                   | No                     |              37 |           12 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------+-------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
-|      Clock Signal      |                        Enable Signal                        |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------+-------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[bits][3]_i_2__0_n_0          |                                                    |                1 |              2 |         2.00 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[bits][3]_i_2__0_n_0          | soc_inst/uart_inst/core/rxp/rr[bits][3]_i_1_n_0    |                1 |              2 |         2.00 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/txp/rr[bits][3]_i_2_n_0             |                                                    |                1 |              2 |         2.00 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/txp/rr[bits][3]_i_2_n_0             | soc_inst/uart_inst/core/txp/rr[bits][3]_i_1_n_0    |                1 |              2 |         2.00 |
-|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Prueba/FSM_onehot_state_reg[2]_i_1__0_n_0 | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |                3 |              4 |         1.33 |
-|  mmcm_inst/inst/clkout | soc_inst/spi_inst/coms/address_reg0                         | soc_inst/spi_inst/Prueba/enable_down_reg_reg_0     |                1 |              4 |         4.00 |
-|  mmcm_inst/inst/clkout | soc_inst/spi_inst/coms/cr_reg0                              |                                                    |                1 |              4 |         4.00 |
-|  mmcm_inst/inst/clkout | soc_inst/spi_inst/coms/dr_reg0                              |                                                    |                1 |              4 |         4.00 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[sample][4]_i_1_n_0           | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_1_n_0    |                2 |              5 |         2.50 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_2_n_0             | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_1_n_0    |                2 |              5 |         2.50 |
-|  mmcm_inst/inst/clkout | soc_inst/spi_inst/coms/instruction_reg0                     | soc_inst/spi_inst/coms/instruction_reg[7]_i_1_n_0  |                2 |              5 |         2.50 |
-|  mmcm_inst/inst/clkout |                                                             | soc_inst/uart_inst/iface/en                        |                2 |              6 |         3.00 |
-|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Prueba/FSM_onehot_state_reg[5]_i_1_n_0    | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |                2 |              6 |         3.00 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rn[parity]9_out                 |                                                    |                1 |              8 |         8.00 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/E[0]                            | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |                2 |              9 |         4.50 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/txp/rr[data][8]_i_1_n_0             |                                                    |                4 |             10 |         2.50 |
-|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/instr_reg[funct3][1]_1[0]                 | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |                3 |             10 |         3.33 |
-|  mmcm_inst/inst/clkout |                                                             | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |                6 |             11 |         1.83 |
-|  mmcm_inst/inst/clkout |                                                             |                                                    |                6 |             13 |         2.17 |
-|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[samplep][0]_i_2_n_0          | soc_inst/uart_inst/core/rxp/rr[samplep][0]_i_1_n_0 |                4 |             15 |         3.75 |
-|  mmcm_inst/inst/clkout |                                                             | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_1_n_0    |                5 |             20 |         4.00 |
-|  mmcm_inst/inst/clkout |                                                             | soc_inst/uart_inst/core/txp/rn[prescaler]          |                5 |             20 |         4.00 |
-|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/E[0]                                      | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |               12 |             31 |         2.58 |
-|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/pcn                                       | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |                9 |             32 |         3.56 |
-|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/regf_reg_1_i_1_n_0                        | soc_inst/FSM_sequential_sr[1]_i_2_n_0              |               23 |             44 |         1.91 |
-+------------------------+-------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
++------------------------+-----------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |                          Enable Signal                          |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+-----------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/txp/rr[bits][3]_i_2_n_0                 | soc_inst/uart_inst/core/txp/rr[bits][3]_i_1_n_0             |                1 |              1 |         1.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[bits][3]_i_2__0_n_0              |                                                             |                2 |              2 |         1.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[bits][3]_i_2__0_n_0              | soc_inst/uart_inst/core/rxp/rr[bits][3]_i_1_n_0             |                2 |              2 |         1.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/txp/rr[bits][3]_i_2_n_0                 |                                                             |                2 |              3 |         1.50 |
+|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Controller/FSM_onehot_state_reg[2]_i_1__0_n_0 | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                1 |              4 |         4.00 |
+|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Communications/dr_reg0                        |                                                             |                1 |              4 |         4.00 |
+|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Communications/cr_reg0                        |                                                             |                1 |              4 |         4.00 |
+|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Communications/address_reg0                   | soc_inst/spi_inst/Controller/enable_down_reg_reg_0          |                1 |              4 |         4.00 |
+|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Communications/instruction_reg0               | soc_inst/spi_inst/Communications/instruction_reg[7]_i_1_n_0 |                1 |              5 |         5.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_2_n_0                 | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_1_n_0             |                1 |              5 |         5.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rr[sample][4]_i_1_n_0               | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_1_n_0             |                2 |              5 |         2.50 |
+|  mmcm_inst/inst/clkout |                                                                 | soc_inst/uart_inst/iface/en                                 |                3 |              6 |         2.00 |
+|  mmcm_inst/inst/clkout | soc_inst/spi_inst/Controller/FSM_onehot_state_reg[5]_i_1_n_0    | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                3 |              6 |         2.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/p_0_in[4]                           |                                                             |                2 |              9 |         4.50 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/E[0]                                | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                3 |              9 |         3.00 |
+|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/E[0]                                          | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                2 |             10 |         5.00 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/txp/rr[data][8]_i_1_n_0                 |                                                             |                2 |             10 |         5.00 |
+|  mmcm_inst/inst/clkout |                                                                 | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                8 |             11 |         1.38 |
+|  mmcm_inst/inst/clkout |                                                                 |                                                             |                5 |             12 |         2.40 |
+|  mmcm_inst/inst/clkout | soc_inst/uart_inst/core/rxp/rn[samplep]1_carry__1_n_5           | soc_inst/uart_inst/core/rxp/rr[samplep][0]_i_1_n_0          |                4 |             15 |         3.75 |
+|  mmcm_inst/inst/clkout |                                                                 | soc_inst/uart_inst/core/rxp/rr[ones][4]_i_1_n_0             |                5 |             20 |         4.00 |
+|  mmcm_inst/inst/clkout |                                                                 | soc_inst/uart_inst/core/txp/rn[prescaler]                   |                5 |             20 |         4.00 |
+|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/rr_reg[state]_2[0]                            | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                9 |             31 |         3.44 |
+|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/pcn                                           | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |                9 |             32 |         3.56 |
+|  mmcm_inst/inst/clkout | soc_inst/cpu_inst/regf_reg_1_i_1_n_0                            | soc_inst/FSM_sequential_sr[1]_i_2_n_0                       |               22 |             44 |         2.00 |
++------------------------+-----------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
 
 

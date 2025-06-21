@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Wed Jun 18 15:39:51 2025
+// Date        : Wed Jun 18 15:39:50 2025
 // Host        : DESKTOP-VKHET3S running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.gen/sources_1/ip/mmcm/mmcm_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top mmcm -prefix
+//               mmcm_ mmcm_sim_netlist.v
 // Design      : mmcm
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,13 +25,13 @@ module mmcm
   wire clkout;
   wire resetn;
 
-  mmcm_clk_wiz inst
+  mmcm_mmcm_clk_wiz inst
        (.clkin(clkin),
         .clkout(clkout),
         .resetn(resetn));
 endmodule
 
-module mmcm_clk_wiz
+module mmcm_mmcm_clk_wiz
    (clkout,
     resetn,
     clkin);

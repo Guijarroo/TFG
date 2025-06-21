@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -91,11 +90,8 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/main.hex
 read_vhdl -library xil_defaultlib {
+  C:/Proyecto_TFG/TFG/src/controll.vhd
   C:/Proyecto_TFG/riscv/hw/src/utils/sbus.vhd
-  C:/Proyecto_TFG/TFG/src/Register.vhd
-  C:/Proyecto_TFG/TFG/src/SPI_Recurente.vhd
-  C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd
-  C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd
   C:/Proyecto_TFG/riscv/hw/src/core/cpu_pkg.vhd
   C:/Proyecto_TFG/riscv/hw/src/core/cpu.vhd
   C:/Proyecto_TFG/riscv/hw/src/iconn/iconn_pkg.vhd
@@ -103,9 +99,12 @@ read_vhdl -library xil_defaultlib {
   C:/Proyecto_TFG/riscv/hw/src/utils/ihex.vhd
   C:/Proyecto_TFG/riscv/hw/src/mem/mem_pkg.vhd
   C:/Proyecto_TFG/riscv/hw/src/mem/mem.vhd
+  C:/Proyecto_TFG/TFG/src/registers.vhd
+  C:/Proyecto_TFG/TFG/src/serial_communications.vhd
   C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart_pkg.vhd
   C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/sources_1/new/spi_pkg.vhd
   C:/Proyecto_TFG/riscv/hw/src/soc.vhd
+  C:/Proyecto_TFG/TFG/src/spi.vhd
   C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart_core/uart_core_pkg.vhd
   C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart_iface.vhd
   C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart_core/uart_tx.vhd
@@ -114,7 +113,7 @@ read_vhdl -library xil_defaultlib {
   C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart.vhd
   C:/Proyecto_TFG/TFG/src/top.vhd
 }
-read_ip -quiet c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/sources_1/ip/mmcm/mmcm.xci
+read_ip -quiet C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/sources_1/ip/mmcm/mmcm.xci
 set_property used_in_implementation false [get_files -all c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.gen/sources_1/ip/mmcm/mmcm_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.gen/sources_1/ip/mmcm/mmcm.xdc]
 set_property used_in_implementation false [get_files -all c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.gen/sources_1/ip/mmcm/mmcm_ooc.xdc]
@@ -131,6 +130,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc
 set_property used_in_implementation false [get_files C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/utils_1/imports/synth_1/soc.dcp

@@ -10,7 +10,7 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 395.004 ; gain = 61.629
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 394.902 ; gain = 63.445
 Command: read_checkpoint -auto_incremental -incremental C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/utils_1/imports/synth_1/soc.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/utils_1/imports/synth_1/soc.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,30 +23,30 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17264
+INFO: [Synth 8-7075] Helper process launched with PID 33648
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Universidad/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.410 ; gain = 409.176
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1233.809 ; gain = 408.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Proyecto_TFG/TFG/src/top.vhd:21]
-INFO: [Synth 8-3491] module 'mmcm' declared at 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/.Xil/Vivado-476-DESKTOP-VKHET3S/realtime/mmcm_stub.v:5' bound to instance 'mmcm_inst' of component 'mmcm' [C:/Proyecto_TFG/TFG/src/top.vhd:35]
-INFO: [Synth 8-6157] synthesizing module 'mmcm' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/.Xil/Vivado-476-DESKTOP-VKHET3S/realtime/mmcm_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mmcm' (0#1) [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/.Xil/Vivado-476-DESKTOP-VKHET3S/realtime/mmcm_stub.v:5]
+INFO: [Synth 8-3491] module 'mmcm' declared at 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/.Xil/Vivado-27040-DESKTOP-VKHET3S/realtime/mmcm_stub.v:5' bound to instance 'mmcm_inst' of component 'mmcm' [C:/Proyecto_TFG/TFG/src/top.vhd:35]
+INFO: [Synth 8-6157] synthesizing module 'mmcm' [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/.Xil/Vivado-27040-DESKTOP-VKHET3S/realtime/mmcm_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm' (0#1) [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/.Xil/Vivado-27040-DESKTOP-VKHET3S/realtime/mmcm_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'soc' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:33]
 INFO: [Synth 8-3491] module 'cpu' declared at 'C:/Proyecto_TFG/riscv/hw/src/core/cpu.vhd:9' bound to instance 'cpu_inst' of component 'cpu' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:54]
 INFO: [Synth 8-638] synthesizing module 'cpu' [C:/Proyecto_TFG/riscv/hw/src/core/cpu.vhd:20]
 INFO: [Synth 8-226] default block is never used [C:/Proyecto_TFG/riscv/hw/src/core/cpu.vhd:115]
 INFO: [Synth 8-256] done synthesizing module 'cpu' (0#1) [C:/Proyecto_TFG/riscv/hw/src/core/cpu.vhd:20]
-	Parameter config bound to: 111'b000000000000000000000000000000000101000100000000000000000000000000000010100100000000000000000000000000000000100 
+	Parameter config bound to: 111'b000000000000000000000000000000000111000100000000000000000000000000000010100100000000000000000000000000000001010 
 INFO: [Synth 8-3491] module 'iconn' declared at 'C:/Proyecto_TFG/riscv/hw/src/iconn/iconn.vhd:9' bound to instance 'iconn_inst' of component 'iconn' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:62]
 INFO: [Synth 8-638] synthesizing module 'iconn' [C:/Proyecto_TFG/riscv/hw/src/iconn/iconn.vhd:26]
-	Parameter config bound to: 111'b000000000000000000000000000000000101000100000000000000000000000000000010100100000000000000000000000000000000100 
+	Parameter config bound to: 111'b000000000000000000000000000000000111000100000000000000000000000000000010100100000000000000000000000000000001010 
 INFO: [Synth 8-256] done synthesizing module 'iconn' (0#1) [C:/Proyecto_TFG/riscv/hw/src/iconn/iconn.vhd:26]
-	Parameter depth bound to: 10 - type: integer 
+	Parameter depth bound to: 14 - type: integer 
 INFO: [Synth 8-3491] module 'mem' declared at 'C:/Proyecto_TFG/riscv/hw/src/mem/mem.vhd:10' bound to instance 'mem_inst' of component 'mem' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'mem' [C:/Proyecto_TFG/riscv/hw/src/mem/mem.vhd:22]
-	Parameter depth bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mem' (0#1) [C:/Proyecto_TFG/riscv/hw/src/mem/mem.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'mem' [C:/Proyecto_TFG/riscv/hw/src/mem/mem.vhd:23]
+	Parameter depth bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mem' (0#1) [C:/Proyecto_TFG/riscv/hw/src/mem/mem.vhd:23]
 	Parameter config bound to: 37'b0010000000000000000000000000000001010 
 INFO: [Synth 8-3491] module 'uart' declared at 'C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart.vhd:9' bound to instance 'uart_inst' of component 'uart' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:84]
 INFO: [Synth 8-638] synthesizing module 'uart' [C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart.vhd:29]
@@ -61,60 +61,60 @@ INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Proyecto_TFG/riscv/hw/src/
 INFO: [Synth 8-256] done synthesizing module 'uart_rx' (0#1) [C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart_core/uart_rx.vhd:30]
 INFO: [Synth 8-256] done synthesizing module 'uart_core' (0#1) [C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart_core/uart_core.vhd:31]
 INFO: [Synth 8-256] done synthesizing module 'uart' (0#1) [C:/Proyecto_TFG/riscv/hw/src/periph/uart/uart.vhd:29]
-	Parameter config bound to: 37'b0100000000000000000000000000000000100 
-INFO: [Synth 8-3491] module 'SPI' declared at 'C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd:27' bound to instance 'spi_inst' of component 'spi' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd:49]
-	Parameter config bound to: 37'b0100000000000000000000000000000000100 
-INFO: [Synth 8-3491] module 'Registers' declared at 'C:/Proyecto_TFG/TFG/src/Register.vhd:28' bound to instance 'regs' of component 'Registers' [C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'Registers' [C:/Proyecto_TFG/TFG/src/Register.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Registers' (0#1) [C:/Proyecto_TFG/TFG/src/Register.vhd:48]
+	Parameter config bound to: 37'b0100000000000000000000000000000001010 
+INFO: [Synth 8-3491] module 'spi' declared at 'C:/Proyecto_TFG/TFG/src/spi.vhd:27' bound to instance 'spi_inst' of component 'spi' [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'spi' [C:/Proyecto_TFG/TFG/src/spi.vhd:49]
+	Parameter config bound to: 37'b0100000000000000000000000000000001010 
+INFO: [Synth 8-3491] module 'registers' declared at 'C:/Proyecto_TFG/TFG/src/registers.vhd:28' bound to instance 'Regs' of component 'Registers' [C:/Proyecto_TFG/TFG/src/spi.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'registers' [C:/Proyecto_TFG/TFG/src/registers.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'registers' (0#1) [C:/Proyecto_TFG/TFG/src/registers.vhd:48]
 	Parameter baddr bound to: 536870912 - type: integer 
-INFO: [Synth 8-3491] module 'Controll' declared at 'C:/Proyecto_TFG/TFG/src/SPI_Recurente.vhd:26' bound to instance 'Prueba' of component 'Controll' [C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd:144]
-INFO: [Synth 8-638] synthesizing module 'Controll' [C:/Proyecto_TFG/TFG/src/SPI_Recurente.vhd:51]
+INFO: [Synth 8-3491] module 'controll' declared at 'C:/Proyecto_TFG/TFG/src/controll.vhd:26' bound to instance 'Controller' of component 'Controll' [C:/Proyecto_TFG/TFG/src/spi.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'controll' [C:/Proyecto_TFG/TFG/src/controll.vhd:51]
 	Parameter baddr bound to: 536870912 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Controll' (0#1) [C:/Proyecto_TFG/TFG/src/SPI_Recurente.vhd:51]
-INFO: [Synth 8-3491] module 'Serial_Communications' declared at 'C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd:34' bound to instance 'coms' of component 'Serial_Communications' [C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd:172]
-INFO: [Synth 8-638] synthesizing module 'Serial_Communications' [C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'Serial_Communications' (0#1) [C:/Proyecto_TFG/TFG/src/Serial_Comunications.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'SPI' (0#1) [C:/Proyecto_TFG/TFG/src/SPI_Recurrente_Ful_system.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'controll' (0#1) [C:/Proyecto_TFG/TFG/src/controll.vhd:51]
+INFO: [Synth 8-3491] module 'serial_communications' declared at 'C:/Proyecto_TFG/TFG/src/serial_communications.vhd:34' bound to instance 'Communications' of component 'Serial_Communications' [C:/Proyecto_TFG/TFG/src/spi.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'serial_communications' [C:/Proyecto_TFG/TFG/src/serial_communications.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'serial_communications' (0#1) [C:/Proyecto_TFG/TFG/src/serial_communications.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'spi' (0#1) [C:/Proyecto_TFG/TFG/src/spi.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'soc' (0#1) [C:/Proyecto_TFG/riscv/hw/src/soc.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Proyecto_TFG/TFG/src/top.vhd:21]
-WARNING: [Synth 8-7129] Port sin[wdata][31] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][30] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][29] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][28] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][27] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][26] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][25] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][24] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][23] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][22] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][21] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][20] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][19] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][18] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][17] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][16] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][15] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][14] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][13] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][12] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][11] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][10] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][9] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][8] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][7] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][6] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][5] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][4] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][3] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][2] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][1] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][0] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][3] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][2] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][1] in module Registers is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][0] in module Registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][31] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][30] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][29] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][28] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][27] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][26] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][25] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][24] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][23] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][22] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][21] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][20] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][19] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][18] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][17] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][16] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][15] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][14] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][13] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][12] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][11] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][10] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][9] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][8] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][7] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][6] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][5] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][4] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][3] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][2] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][1] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][0] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][3] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][2] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][1] in module registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][0] in module registers is either unconnected or has no load
 WARNING: [Synth 8-7129] Port config[oversampling][1] in module uart_tx is either unconnected or has no load
 WARNING: [Synth 8-7129] Port config[oversampling][0] in module uart_tx is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sin[addr][1] in module uart_iface is either unconnected or has no load
@@ -138,23 +138,21 @@ WARNING: [Synth 8-7129] Port slave_in[addr][17] in module mem is either unconnec
 WARNING: [Synth 8-7129] Port slave_in[addr][16] in module mem is either unconnected or has no load
 WARNING: [Synth 8-7129] Port slave_in[addr][15] in module mem is either unconnected or has no load
 WARNING: [Synth 8-7129] Port slave_in[addr][14] in module mem is either unconnected or has no load
-WARNING: [Synth 8-7129] Port slave_in[addr][13] in module mem is either unconnected or has no load
-WARNING: [Synth 8-7129] Port slave_in[addr][12] in module mem is either unconnected or has no load
 WARNING: [Synth 8-7129] Port slave_in[addr][1] in module mem is either unconnected or has no load
 WARNING: [Synth 8-7129] Port slave_in[addr][0] in module mem is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.930 ; gain = 535.695
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1373.246 ; gain = 548.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.930 ; gain = 535.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1373.246 ; gain = 548.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1361.930 ; gain = 535.695
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1373.246 ; gain = 548.215
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1361.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1373.246 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -165,25 +163,27 @@ Parsing XDC File [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/c
 Finished Parsing XDC File [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.srcs/constrs_1/new/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1472.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1437.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1472.895 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1437.742 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Universidad/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1472.895 ; gain = 646.660
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1437.742 ; gain = 612.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1472.895 ; gain = 646.660
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1437.742 ; gain = 612.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -192,13 +192,13 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Proyect
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.gen/sources_1/ip/mmcm/mmcm/mmcm_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for mmcm_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1472.895 ; gain = 646.660
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1437.742 ; gain = 612.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sr_reg' in module 'cpu'
 INFO: [Synth 8-802] inferred FSM for state register 'rr_reg[state]' in module 'uart_tx'
 INFO: [Synth 8-802] inferred FSM for state register 'rr_reg[state]' in module 'uart_rx'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Controll'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'Serial_Communications'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'controll'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'serial_communications'
 INFO: [Synth 8-3971] The signal "cpu:/regf_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -241,8 +241,8 @@ INFO: [Synth 8-3354] encoded FSM with state register 'rr_reg[state]' using encod
                   send_y |                           010000 |                              010
                   send_z |                           100000 |                              011
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'Controll'
-WARNING: [Synth 8-327] inferring latch for variable 'enable_registers_reg' [C:/Proyecto_TFG/TFG/src/SPI_Recurente.vhd:149]
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'controll'
+WARNING: [Synth 8-327] inferring latch for variable 'enable_registers_reg' [C:/Proyecto_TFG/TFG/src/controll.vhd:149]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -254,9 +254,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'enable_registers_reg' [C:/P
                    write |                          0100000 |                              100
                     done |                          1000000 |                              110
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'Serial_Communications'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'serial_communications'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1472.895 ; gain = 646.660
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1437.742 ; gain = 612.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -287,7 +287,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 6     
 +---RAMs : 
-	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
 	             1024 Bit	(32 X 32 bit)          RAMs := 1     
 +---Muxes : 
 	  32 Input   32 Bit        Muxes := 2     
@@ -345,49 +345,49 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port sin[wdata][31] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][30] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][29] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][28] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][27] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][26] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][25] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][24] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][23] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][22] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][21] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][20] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][19] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][18] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][17] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][16] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][15] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][14] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][13] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][12] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][11] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][10] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][9] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][8] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][7] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][6] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][5] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][4] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][3] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][2] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][1] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wdata][0] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][3] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][2] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][1] in module SPI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sin[wmask][0] in module SPI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][31] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][30] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][29] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][28] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][27] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][26] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][25] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][24] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][23] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][22] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][21] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][20] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][19] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][18] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][17] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][16] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][15] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][14] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][13] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][12] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][11] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][10] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][9] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][8] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][7] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][6] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][5] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][4] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][3] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][2] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][1] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wdata][0] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][3] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][2] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][1] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sin[wmask][0] in module spi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sin[addr][1] in module uart is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port sin[addr][0] in module uart is either unconnected or has no load
 INFO: [Synth 8-3971] The signal "\soc_inst/cpu_inst/regf_reg " was recognized as a true dual port RAM template.
-WARNING: [Synth 8-3332] Sequential element (soc_inst/spi_inst/Prueba/enable_registers_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (soc_inst/spi_inst/coms/FSM_onehot_state_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (soc_inst/spi_inst/Controller/enable_registers_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (soc_inst/spi_inst/Communications/FSM_onehot_state_reg_reg[5]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1472.895 ; gain = 646.660
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1437.742 ; gain = 612.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -397,7 +397,7 @@ Block RAM: Preliminary Mapping Report (see note below)
 +------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name | RTL Object                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|top         | soc_inst/mem_inst/mem_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|top         | soc_inst/mem_inst/mem_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
 +------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
@@ -408,13 +408,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:31 . Memory (MB): peak = 1472.895 ; gain = 646.660
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1437.742 ; gain = 612.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:06 . Memory (MB): peak = 1558.035 ; gain = 731.801
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1561.508 ; gain = 736.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -424,7 +424,7 @@ Block RAM: Final Mapping Report
 +------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name | RTL Object                | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|top         | soc_inst/mem_inst/mem_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|top         | soc_inst/mem_inst/mem_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
 +------------+---------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -435,9 +435,12 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance soc_inst/cpu_inst/regf_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance soc_inst/cpu_inst/regf_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance soc_inst/mem_inst/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc_inst/mem_inst/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc_inst/mem_inst/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc_inst/mem_inst/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance soc_inst/mem_inst/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -455,37 +458,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:16 ; elapsed = 00:02:21 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:16 ; elapsed = 00:02:21 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -504,43 +507,43 @@ Report Cell Usage:
 +------+---------+------+
 |1     |mmcm     |     1|
 |2     |CARRY4   |   116|
-|3     |LUT1     |     9|
-|4     |LUT2     |   158|
-|5     |LUT3     |   123|
-|6     |LUT4     |   269|
-|7     |LUT5     |   243|
-|8     |LUT6     |   456|
+|3     |LUT1     |     8|
+|4     |LUT2     |   168|
+|5     |LUT3     |    95|
+|6     |LUT4     |   276|
+|7     |LUT5     |   237|
+|8     |LUT6     |   481|
 |9     |MUXF7    |     1|
 |10    |RAMB18E1 |     2|
-|11    |RAMB36E1 |     1|
-|12    |FDCE     |   144|
-|13    |FDPE     |     3|
-|14    |FDRE     |   123|
-|15    |FDSE     |     4|
-|16    |IBUF     |     2|
-|17    |OBUF     |     4|
+|11    |RAMB36E1 |     4|
+|15    |FDCE     |   144|
+|16    |FDPE     |     3|
+|17    |FDRE     |   123|
+|18    |FDSE     |     4|
+|19    |IBUF     |     2|
+|20    |OBUF     |     4|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:02:16 . Memory (MB): peak = 1574.047 ; gain = 636.848
-Synthesis Optimization Complete : Time (s): cpu = 00:02:16 ; elapsed = 00:02:22 . Memory (MB): peak = 1574.047 ; gain = 747.812
+Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 1574.023 ; gain = 684.496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1574.023 ; gain = 748.992
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1581.855 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1581.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 123 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1591.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1586.492 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 770ea593
+Synth Design complete, checksum: 3676a441
 INFO: [Common 17-83] Releasing license: Synthesis
-79 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+81 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:35 . Memory (MB): peak = 1591.508 ; gain = 1161.461
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 1586.492 ; gain = 1155.793
 INFO: [Common 17-1381] The checkpoint 'C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 18 15:58:02 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 20 18:23:25 2025...

@@ -12,3 +12,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V2/Proyecto_TFG_V2/Proyecto_TFG_V2.xpr
+update_compile_order -fileset sources_1

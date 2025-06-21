@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../src/controll.vhd" \
+"../../../../../../../riscv/hw/src/utils/sbus.vhd" \
+"../../../../../../src/registers.vhd" \
+"../../../../../../src/serial_communications.vhd" \
+"../../../../../../src/spi.vhd" \
+"../../../../../../tb/spi_tb.vhd" \
+
+# Do not sort compile order
+nosort

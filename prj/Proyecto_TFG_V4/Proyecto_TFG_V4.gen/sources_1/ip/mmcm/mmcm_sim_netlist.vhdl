@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Wed Jun 18 15:39:51 2025
+-- Date        : Wed Jun 18 15:39:50 2025
 -- Host        : DESKTOP-VKHET3S running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Proyecto_TFG/TFG/prj/Proyecto_TFG_V4/Proyecto_TFG_V4.gen/sources_1/ip/mmcm/mmcm_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top mmcm -prefix
+--               mmcm_ mmcm_sim_netlist.vhdl
 -- Design      : mmcm
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,15 +14,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity mmcm_clk_wiz is
+entity mmcm_mmcm_clk_wiz is
   port (
     clkout : out STD_LOGIC;
     resetn : in STD_LOGIC;
     clkin : in STD_LOGIC
   );
-end mmcm_clk_wiz;
+end mmcm_mmcm_clk_wiz;
 
-architecture STRUCTURE of mmcm_clk_wiz is
+architecture STRUCTURE of mmcm_mmcm_clk_wiz is
   signal clkfbout_buf_mmcm : STD_LOGIC;
   signal clkfbout_mmcm : STD_LOGIC;
   signal clkin_mmcm : STD_LOGIC;
@@ -187,7 +187,7 @@ end mmcm;
 
 architecture STRUCTURE of mmcm is
 begin
-inst: entity work.mmcm_clk_wiz
+inst: entity work.mmcm_mmcm_clk_wiz
      port map (
       clkin => clkin,
       clkout => clkout,
